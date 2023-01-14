@@ -15,8 +15,9 @@
 /* Header section astrt */
 .header {
   width: 100vw;
-  height: 800px;
+  height: auto;
   background: rgba(255, 144, 14, 0.1);
+  padding-bottom: 30px;
 }
 .brand-name {
   color: #131313;
@@ -49,14 +50,12 @@
   width: 80%;
   height: auto;
   margin: 20px auto;
-  border: 2px solid black;
 }
 
 .banner-infro-text {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  border: 2px solid black;
 }
 .banner-infro-title {
   color: #131313;
@@ -69,6 +68,7 @@
   color: #727272;
   font-size: 16px;
   line-height: 26px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -80,15 +80,26 @@
   border: none;
   color: #ffffff;
 }
+
 .banner-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.banner-img img {
+  width: 90%;
+}
+/* .banner-img {
   width: 100%;
   height: 50vh;
   background: url(/images/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
+  margin: 20px auto;
   border-radius: 8px;
-}
+} */
 /* Header section end  */
 
 /* features section start */
@@ -141,7 +152,7 @@
 
 .service-section {
   width: 90%;
-  margin: 0 auto;
+  margin: 100px auto;
   display: flex;
   gap: 20px;
 }
@@ -208,3 +219,144 @@
 }
 
 /* service section end  */
+
+/* some facts  */
+
+.some-facts {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.some-facts h1 {
+  color: #131313;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.some-facts p {
+  width: 60%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+
+/* Awards section */
+
+.award-container {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.award-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+}
+
+.award-box:hover {
+  transform: scale(1.2);
+  background-color: #ff8f0e95;
+  transition: all 1s;
+}
+
+.awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.awards > span {
+  color: #424242;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.awards > p {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* sponsor section */
+
+.sponsor-section {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.sponsor-heading {
+  color: #131313;
+  font-size: 35px;
+  font-weight: 700;
+}
+.sponsor-description {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 40%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.sponsor-names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sponsor-names img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+/* my section for extra mark */
+
+.my-section {
+  width: 80%;
+  background-color: antiquewhite;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.work-itm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.work-itm img {
+  width: 100px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.work-itm img:hover {
+  opacity: 0.8;
+  filter: none;
+}
+
+/* footer section */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  background: #fff4e7;
+  border-radius: 8px;
+  margin: 50px auto;
+}
+
+.footer p {
+  color: #424242;
+  font-size: 20px;
+  font-weight: 400;
+}
