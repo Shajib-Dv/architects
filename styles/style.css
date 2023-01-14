@@ -360,3 +360,77 @@
   font-size: 20px;
   font-weight: 400;
 }
+
+/* Responsive only for mobile view */
+
+@media screen and (max-width: 576px) {
+  .nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .banner-infro-title {
+    font-size: 20px;
+  }
+  .banner-infro-description,
+  .footer p {
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+  .banner-img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .features,
+  .work-itm {
+    display: block;
+  }
+  .features-img-section,
+  .award-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .features-infro-section {
+    margin: 0;
+  }
+
+  .service-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .service-banner-section img,
+  .sponsor-description,
+  .service-list {
+    width: 100%;
+  }
+  .experience-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .sponsor-names {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+  }
+
+  .sponsor-names img,
+  .work-itm img {
+    width: 30%;
+  }
+}
