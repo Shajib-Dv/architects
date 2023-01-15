@@ -11,6 +11,9 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 
 /* Header section start */
 .header {
@@ -79,6 +82,10 @@
   border-radius: 8px;
   border: none;
   color: #ffffff;
+}
+.explore-btn:hover {
+  background-color: #ff8a04;
+  cursor: pointer;
 }
 
 .banner-img-container {
@@ -174,6 +181,12 @@
   border-radius: 8px;
   padding: 30px;
   margin: 10px 0;
+  transition: background 0.5s;
+}
+
+.service-list:hover {
+  background-color: #fff4e7;
+  transition: all 0.5s;
 }
 
 .service-list h3 {
@@ -253,12 +266,13 @@
   height: 200px;
   border: 1px solid #ff900e;
   border-radius: 8px;
+  transition: all 0.5s;
 }
 
 .award-box:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: #ff8f0e95;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .awards {
