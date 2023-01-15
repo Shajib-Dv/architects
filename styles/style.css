@@ -41,7 +41,9 @@ body {
   align-items: center;
   list-style: none;
 }
-
+.nav-items li a:hover {
+  color: #afacac;
+}
 .nav-items li > a {
   color: #424242;
   font-weight: 500;
@@ -401,7 +403,7 @@ body {
   .nav-items {
     display: flex;
     gap: 15px;
-    align-items: center;
+    flex-direction: column;
   }
 
   .banner-infro-title {
