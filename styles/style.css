@@ -84,9 +84,11 @@ body {
   border-radius: 8px;
   border: none;
   color: #ffffff;
+  transition: all 0.5s;
 }
 .explore-btn:hover {
-  background-color: #ff8a04;
+  background-color: #ffcc00;
+  transition: all 0.5s;
   cursor: pointer;
 }
 
@@ -468,8 +470,8 @@ body {
   }
   .sponsor-names {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
     justify-items: center;
   }
 
