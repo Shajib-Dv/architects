@@ -335,7 +335,7 @@ body {
 
 .my-section {
   width: 80%;
-  background-color: antiquewhite;
+  background-color: #ff8f0e8d;
   margin: 50px auto;
   padding: 10px;
   border-radius: 8px;
@@ -347,24 +347,28 @@ body {
   font-size: 35px;
   font-weight: 700;
 }
-.work-itm {
+.user-form {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
-.work-itm img {
-  width: 100px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+.email-container {
+  width: 30%;
 }
-
-.vs-code {
-  width: 50px !important;
+#email {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  background-color: bisque;
 }
-
-.work-itm img:hover {
-  opacity: 0.8;
-  filter: none;
+.update-btn {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #ff8a04;
+  cursor: pointer;
 }
 
 /* my section end  */
@@ -407,7 +411,7 @@ body {
   }
 
   .banner-infro-title {
-    font-size: 20px;
+    font-size: 35px;
   }
   .banner-infro-description,
   .footer p {
@@ -423,8 +427,7 @@ body {
     justify-content: flex-start;
   }
 
-  .features,
-  .work-itm {
+  .features {
     display: block;
   }
   .features-img-section,
@@ -446,12 +449,17 @@ body {
 
   .service-banner-section img,
   .banner-img-container img,
+  .banner-infro-text,
   .sponsor-description,
   .service-list,
   .features {
     width: 100%;
     height: auto;
   }
+  .email-container {
+    width: 50%;
+  }
+
   .experience-box {
     position: relative;
     top: 0;
@@ -460,13 +468,13 @@ body {
   }
   .sponsor-names {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    align-items: center;
+    justify-items: center;
   }
 
   .sponsor-names img,
-  .work-itm img {
+  .user-form img {
     width: 30%;
   }
   .footer p {
